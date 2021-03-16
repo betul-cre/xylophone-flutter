@@ -4,6 +4,11 @@ import 'package:audioplayers/audio_cache.dart';
 void main() => runApp(XylophoneApp());
 
 class XylophoneApp extends StatelessWidget {
+  void playsound(int soundnumber) {
+    final player = AudioCache();
+    player.play("note$soundnumber.wav");
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,8 +32,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note1.wav");
+                  playsound(1);
                 },
               )),
               Center(
@@ -37,8 +41,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note2.wav");
+                  playsound(2);
                 },
               )),
               Center(
@@ -47,8 +50,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note3.wav");
+                  playsound(3);
                 },
               )),
               Center(
@@ -57,8 +59,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note4.wav");
+                  playsound(4);
                 },
               )),
               Center(
@@ -67,8 +68,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note5.wav");
+                  playsound(5);
                 },
               )),
               Center(
@@ -77,8 +77,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note6.wav");
+                  playsound(6);
                 },
               )),
               Center(
@@ -87,8 +86,7 @@ class XylophoneApp extends StatelessWidget {
                 minWidth: 500,
                 height: 100,
                 onPressed: () {
-                  final player = AudioCache();
-                  player.play("note7.wav");
+                  playsound(7);
                 },
               )),
             ],
